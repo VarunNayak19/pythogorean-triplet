@@ -11,6 +11,7 @@ function App() {
     e.preventDefault();
     if (m < n) {
       alert('M should be greater than N')
+      window.location.reload();
     }
 
     let a = m * m - n * n;
