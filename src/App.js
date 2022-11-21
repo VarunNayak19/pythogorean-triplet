@@ -13,10 +13,6 @@ function App() {
       alert('M should be greater than N')
       window.location.reload();
     }
-    if (m < 0 || n < 0) {
-      alert('Values of M and N should be greater than 0')
-      window.location.reload();
-    }
 
     let a = m * m - n * n;
     let b = 2 * m * n;
