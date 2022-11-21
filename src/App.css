@@ -1,0 +1,78 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5%;
+  column-gap: 3rem;
+}
+.sectionOne {
+  width: 40%;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  row-gap: 1rem;
+}
+.sectionTwo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1.05);
+  }
+}
+
+.triangleImg {
+  width: 50%;
+  height: auto;
+  margin: 30px;
+}
+.absoluteP {
+  position: absolute;
+}
+.valueA {
+  left: 10%;
+}
+.valueB {
+  bottom: 15%;
+}
+.valueC {
+  right: 30%;
+}
+/* media query */
+
+@media only screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    row-gap: 2rem;
+    height: auto;
+  }
+  .sectionOne {
+    width: 100%;
+  }
+  .sectionTwo {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .valueB {
+    bottom: 1%;
+  }
+}
